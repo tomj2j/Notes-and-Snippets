@@ -87,3 +87,20 @@ Comments are used to explain the code, and may help when you edit the source cod
 Comments are ignored by browsers.
 
 A CSS comment is placed inside the <style> element, and starts with /_ and ends with _/:
+
+Pseudo Classes
+
+li:first-child - First element of the li elements
+li:last-child - Last element of the li elements
+li:nth-child(odd) or (even) - odd or even elements of the li elements
+
+Stylin Links
+
+a:link
+a:visited
+a:hover {
+color: orange;
+font-weight: bold;
+text-decoration: underline orangered;
+}
+a:active

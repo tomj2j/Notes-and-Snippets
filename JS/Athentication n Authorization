@@ -1,0 +1,27 @@
+Authentication <<WHO>>
+is the proces of verifying who a particular user is.
+
+Authorization <<WHAT>>
+is varifying what a specific user has access to.
+
+<<Password>>
+how to store password.
+<<Never>> store Passwords as text.
+
+> > > > Hashing Functions
+> > > > are functions that map input data of some arbitrary size to fixed-size output values.
+
+Password?123? -> dfgu87zd8734987u9ds8fgu0hj3h4gt9s8452 <<Password-Hashing>>
+
+> > > > cryptographic hasch functions
+
+1. One-way function which is infeasible to invert.
+   cant reverse use the function to get the password from the hash
+2. Small change in input yields large change int he output
+   3.Deterministic - same input yields same output
+   4.Unlikely to find 2 outpus with the same value
+   5.Password #Hash Functions are deliberatly SLOW
+
+> > > > Salting
+> > > > concatinating password before hashing with a random string
+> > > > bycrypt.js node.bcrypt.js

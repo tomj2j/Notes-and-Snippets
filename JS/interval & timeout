@@ -1,0 +1,21 @@
+//window object (global object)
+//console.log("hello") -> window.console.log("hello")
+
+When the timeout happens the code in it will run ONE time
+/* setTimeout(() => {
+  alert("HEllo MasteR");
+}, 3000);
+ */
+
+When the interval happens, the code in it will be run every interval
+With an if statement and the clearInterval we can stop the interval
+
+
+let i = 0;
+const timer = setInterval(() => {
+  console.log("Hello");
+  i++;
+  if (i === 5) {
+    clearInterval(timer);
+  }
+}, 1000);
